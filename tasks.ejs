@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks</title>
+</head>
+<body>
+  <h1>Tasks</h1>
+  <ul>
+    <% tasks.forEach(task => { %>
+      <li><a href="/task?id=<%= task.id %>"><%= task.title %></a></li>
+    <% }); %>
+  </ul>
+  <a href="/add-task">Add New Task</a>
+</body>
+</html>
